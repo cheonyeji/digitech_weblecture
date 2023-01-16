@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day1 - Tag</title>
+</head>
+
+
+
+<body>
+    <!-- 주석단축키 : Ctrl + / 버튼 -->
+    <!-- 제목 (heading) : h1 ~ h6 -->
+    <h1 id="headline">제목</h1>
+    <!-- 단락 (paragraph) : p -->
+    <p>h1 태그 아래에 존재하므로, 위의 요소의 본문입니다</p>
+
+    <!-- 구분선 (horizontal rule) : hr -->
+    <hr>
+
+    <!-- 강조 : em / strong -->
+    <!-- 줄바꿈(Line Break) : br -->
+    <h3>서시</h3>
+    <p>
+        죽는날까지 하늘을 우러러<br />
+        한점 부끄럼이 없기를<br />
+        잎새에 이는 바람에도<br />
+        나는 괴로워 했다<br />
+        <br />
+        별을 노래하는 마음으로<br />
+        <strong>모든 죽어가는 것을 사랑해야지</strong><br />
+        그리고 나에게 주어진 길을<br />
+        걸어가야겠다.<br />
+        <br />
+        <em>오늘밤에도 별이 바람에 스치운다</em><br />
+    </p>
+
+    <hr>
+
+    <!-- 링크 (anchor) : a. href(어디로 이동할지) 속성은 필수값! -->
+    <a href="https://www.naver.com" target="_blank">네이버로 이동!</a>
+    <a href="./login.html">로그인 화면으로 이동</a>
+
+    <a href="#headline">h1태그로 이동</a>
+
+    <a href="mailto:cjsdpwl01@naver.com">천예지쌤에게 메일보내기</a>
+    <a href="tel:+821011111111">천예지쌤에게 전화</a>
+
+    <hr>
+
+    <!-- 순서가 있는(ordered) 리스트 : ol & li -->
+    <ol>
+        <li>
+            <p>준우</p>
+        </li>
+        <li>
+            <p>태희</p>
+        </li>
+        <li>
+            <p>성빈</p>
+        </li>
+        <li>
+            <p>강민</p>
+        </li>
+        <li>
+            <p>민서</p>
+        </li>
+        <li>
+            <p>하늘</p>
+        </li>
+        <li>
+            <p>찬희</p>
+        </li>
+        <li>
+            <p>지원</p>
+        </li>
+    </ol>
+
+    <!-- 순서가 없는(unordered) 리스트 : ul & li -->
+    <ul>
+        <li>
+            <p>준우</p>
+        </li>
+        <li>
+            <p>태희</p>
+        </li>
+        <li>
+            <p>성빈</p>
+        </li>
+        <li>
+            <p>강민</p>
+        </li>
+        <li>
+            <p>민서</p>
+        </li>
+        <li>
+            <p>하늘</p>
+        </li>
+        <li>
+            <p>찬희</p>
+        </li>
+        <li>
+            <p>지원</p>
+        </li>
+    </ul>
+
+    <!-- 정의 리스트 : dl & dt(용어)-dd(설명) -->
+    <dl>
+        <dt>천예지</dt>
+        <dd>프론트엔드 특강 선생님</dd>
+        <dd>고양이를 키움</dd>
+    </dl>
+
+    <hr>
+
+    <!-- 이미지 : img. src, alt 속성 필수 -->
+    <img src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcS-OZTPpZNsnOchlOMmYsSeMprn5sYU4kdOZGPL0_ksM2nHGegFrzLhGlQMBF-amQqPRFs4DzbLrI_o5gA"
+        alt="고등어 고양이 사진" width="300">
+    <img src="./assets/엠돌.jpg" alt="선생님네 엠돌이 사진" width="300">
+
+    <hr>
+
+    <!-- 인용 : blockquote, q -->
+    <blockquote>
+        <p>
+            죽는날까지 하늘을 우러러
+            한점 부끄럼이 없기를
+            잎새에 이는 바람에도
+            나는 괴로워 했다
+        </p>
+    </blockquote>
+
+    <p>나는 윤동주의 서시를 좋아한다. 특히 <q>한점 부끄럼이 없기를</q> 구절을 좋아한다.</p>
+
+    <hr>
+
+    <!-- 의미X 영역 구분용 태그 : span (줄바꿈X) -->
+    <span>아무런 의미가 없지만 span태그로 구분</span>
+    <span>아무런 의미가 없지만 span태그로 구분</span>
+    <span>아무런 의미가 없지만 span태그로 구분</span>
+
+    <!-- 의미X 영역 구분용 태그 : div (줄바꿈O) -->
+    <div>아무런 의미가 없지만 div태그로 구분</div>
+    <div>아무런 의미가 없지만 div태그로 구분</div>
+    <div>아무런 의미가 없지만 div태그로 구분</div>
+
+    <hr>
+
+    <!-- 텍스트를 나눠주는 (줄바꿈O/X) 태그들 -->
+    <p>줄바꿈<br></p>
+    <p>문단을 나눔</p>
+    <div>페이지 안에서! 영역을 나눔</div>
+    <span>줄바꿈X 영역을 지정</span>
+
+
+    <hr>
+    <!-- 유저로부터 입력을 받는 태그 : input -->
+    <input type="text" minlength="4" maxlength="8"><br>
+    <input type="text" placeholder="미리보기(힌트) 글자"><br>
+    <input type="number"><br>
+    <input type="tel"><br>
+    <input type="file"><br>
+    <input type="button" value="버튼"><br>
+    <input type="submit"><br>
+    <!-- input태그의 설명 담당 태그 : label. for로 input 찾아감 -->
+    <label for="input-email">이메일</label>
+    <!-- label 태그와 매칭하는 법 : id 속성 (고유한 값. 중복X) -->
+    <input type="email" id="input-email" class="login-input" placeholder="이메일을 입력하세요"><br>
+
+    <hr>
+
+    <h4>전원</h4>
+    <input type="radio" id="input-on" name="power">
+    <label for="input-on">ON</label>
+    <input type="radio" id="input-off" name="power">
+    <label for="input-off">OFF</label>
+
+
+    <h4>시/도 선택</h4>
+    <input type="radio" id="seoul" name="city">
+    <label for="seoul">서울시</label>
+    <input type="radio" id="daejeon" name="city">
+    <label for="daejeon">대전시</label>
+    <input type="radio" id="gwangju" name="city">
+    <label for="gwangju">광주시</label>
+
+
+    <hr>
+    <!-- form 태그로 input요소를 감싸주자 -->
+    <h4>회원가입</h4>
+    <form action="" method="get">
+        <label for="input-email">이메일</label>
+        <input type="email" id="input-email" class="login-input" placeholder="이메일을 입력하세요"><br>
+
+        <label for="input-pwd">비밀번호</label>
+        <input type="password" id="input-pwd" class="login-input" placeholder="비밀번호를 입력하세요"><br>
+        <input type="submit" value="가입하기">
+    </form>
+
+    <hr>
+
+    <h4>전원</h4>
+    <form action="">
+        <input type="radio" id="input-on" name="power" value="on">
+        <label for="input-on">ON</label>
+        <input type="radio" id="input-off" name="power" value="off">
+        <label for="input-off">OFF</label>
+        <input type="submit" value="제출">
+    </form>
+
+    <h4>시/도 선택</h4>
+    <form action="">
+        <input type="radio" id="seoul" name="city" value="seoul">
+        <label for="seoul">서울시</label>
+        <input type="radio" id="daejeon" name="city" value="daejeon">
+        <label for="daejeon">대전시</label>
+        <input type="radio" id="gwangju" name="city" value="gwangju">
+        <label for="gwangju">광주시</label>
+        <input type="submit" value="제출">
+    </form>
+</body>
+
+</html>
