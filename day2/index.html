@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta name="description" content="디지텍고등학교 웹페이지">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+
+    </style>
+
     <title>Day2 - HTML</title>
 </head>
 
@@ -53,6 +61,118 @@
         <!-- <button type="reset">리셋</button> -->
     </form>
 
+
+    <hr>
+
+    <h3>Table 연습</h3>
+    <!-- 가장 바깥 쪽 : table -->
+    <!-- 한 줄 : tr -->
+    <!-- 줄의 제목 : th, 줄의 내용 : td -->
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>이름</th>
+            <th>개발분야</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>예지</td>
+            <td rowspan="2">프론트엔드</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>지복</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table border="1">
+        <tr>
+            <th></th>
+            <th>월</th>
+            <th>화</th>
+        </tr>
+        <tr>
+            <th>1교시</th>
+            <td>html Quiz</td>
+            <td rowspan="2">CSS Quiz</td>
+        </tr>
+        <tr>
+            <th>2교시</th>
+            <td rowspan="2">html</td>
+        </tr>
+        <tr>
+            <th>3교시</th>
+            <td>CSS</td>
+        </tr>
+        <tr>
+            <th colspan="3">점심시간</th>
+        </tr>
+        <tr>
+            <th>4교시</th>
+            <td rowspan="2">html</td>
+            <td rowspan="3">CSS</td>
+        </tr>
+        <tr>
+            <th>5교시</th>
+        </tr>
+        <tr>
+            <th>6교시</th>
+            <td>html 실전</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h3>미디어 파일 - 오디오, 비디오</h3>
+    <!-- autoplay : 브라우저 진입 시 자동실행 속성 -->
+    <!-- loop : 무한반복 속성 -->
+    <!-- controls : 제어창 표시 속성 -->
+    <audio src="./assets/audio1.mp3" controls></audio>
+    <!-- <video src="./assets/video1.mp4" controls></video> -->
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Io1xqS2i3ZE" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+    <!-- 약어 안내 태그(abbreviaton) : abbr  -->
+    <p>나의 <abbr title="Myers-Briggs Type Indicator, 성격유형검사">MBTI</abbr>는 ENTP입니다.</p>
+
+    <!-- 주소 : address -->
+    <address>
+        <h3>천예지 선생님</h3>
+        <p>web@sdh.hs.kr</p>
+    </address>
+
+
+    <!-- 원본 그대로 표시해주는 태그(preformatting) : pre -->
+    <p>
+        죽는날까지 하늘을 우러러
+        한점 부끄럼이 없기를
+        잎새에 이는 바람에도
+        나는 괴로워 했다
+    </p>
+    <pre>
+        죽는날까지 하늘을 우러러
+        한점 부끄럼이 없기를
+        잎새에 이는 바람에도
+        나는 괴로워 했다
+    </pre>
+
+    <pre>
+        <code>
+            console.log("hello");
+            console.log("hello");
+            console.log("hello");
+            console.log("hello");
+            console.log("hello");
+            console.log("hello");
+        </code>
+    </pre>
+
+    <script src="./app.js"></script>
 </body>
 
 </html>
