@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2 - HTML</title>
+</head>
+
+<body>
+    <h3>Form 태그 - checkbox</h3>
+    <form action="">
+
+        <input type="checkbox" name="frontend" id="input-html" value="html">
+        <label for="input-html">HTML</label>
+
+        <input type="checkbox" name="frontend" id="input-css" value="css">
+        <label for="input-css">CSS</label>
+
+        <input type="checkbox" name="frontend" id="input-js" value="js">
+        <label for="input-js">JS</label>
+
+        <input type="submit" value="제출하기">
+    </form>
+
+    <hr>
+
+    <h3>Form 태그 - select & option</h3>
+    <form action="">
+        <label for="select-stack">개발언어 선택하기</label>
+        <select name="stack" id="select-stack">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option selected value="js">JS</option>
+        </select>
+        <input type="submit" value="제출하기">
+    </form>
+
+    <h3>줄바꿈을 허용하는 input:text요소 - textarea</h3>
+
+    <form action="">
+        <label for="input-title">제목</label>
+        <input type="text" id="input-title" name="title" required>
+        <br>
+        <label for="input-content">내용</label>
+        <textarea id="input-content" name="content" rows="5" cols="30"></textarea>
+
+        <!-- <input type="submit" value="작성완료"> -->
+        <button type="submit">제출</button>
+
+        <!-- <button type="button">단순버튼</button> -->
+        <!-- <button type="reset">리셋</button> -->
+    </form>
+
+</body>
+
+</html>
