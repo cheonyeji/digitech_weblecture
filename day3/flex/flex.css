@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.parent {
+    background-color: rgb(141, 211, 188);
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.child {
+    background-color: rgb(136, 136, 214);
+    height: 100px;
+    width: 300px;
+    border: 1px solid white;
+}
