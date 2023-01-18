@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.parent {
+    width: 400px;
+    background-color: rgb(249, 241, 232);
+    display: flex;
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+}
+
+.box1 {
+    order: 1;
+    background-color: rgb(172, 171, 170);
+}
+
+.box2 {
+    order: 2;
+    background-color: rgb(110, 109, 107);
+}
+
+.box3 {
+    order: 3;
+    background-color: rgb(46, 45, 44);
+}
