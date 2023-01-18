@@ -4,9 +4,8 @@
 }
 
 .parent {
-    width: 400px;
+    width: 700px;
     background-color: #efefef;
-    overflow: hidden;
 }
 
 .child {
@@ -27,4 +26,10 @@
 .blue {
     float: left;
     background-color: rgb(101, 101, 236);
+}
+
+.parent::after {
+    content: "";
+    display: block;
+    clear: both;
 }
