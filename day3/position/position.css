@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.grandma {
+    margin: 0 auto;
+    width: 600px;
+    background-color: rgb(108, 117, 125);
+}
+
+.parent {
+
+    margin: 0 auto;
+    width: 200px;
+    background-color: aliceblue;
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+}
+
+.red {
+    position: fixed;
+    bottom: 0px;
+    background-color: rgb(220, 123, 123);
+}
+
+.yellow {
+    background-color: rgb(241, 241, 136);
+}
+
+.blue {
+    background-color: rgb(101, 101, 236);
+}
