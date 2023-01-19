@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'KorailRoundGothicBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KorailRoundGothicBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+html {
+    font-family: 'KorailRoundGothicBold';
+}
+
+span {
+    border-radius: 1em;
+    font-size: 30px;
+    background-color: #e6b5af;
+    transition: all 1s ease 0.3s;
+}
+
+span:hover {
+    background-color: #b599ce;
+    font-size: 40px;
+}
