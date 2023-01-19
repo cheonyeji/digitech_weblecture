@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  color: #273444;
+}
+
+.profile-name {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3333333333;
+}
+
+.profile-location {
+  font-size: 14px;
+  line-height: 1.4285714286;
+  color: #8492a6;
+}
+
+.profile-detail dt {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.6666666667;
+  color: #8492a6;
+}
+
+.profile-detail dd {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1.25;
+  color: #0066ff;
+}
+
+/* ▼ 여기부터 코드 작성하시면 됩니다 */
+
+/* 
+- [x] (옵션) 배경색 회색으로 지정 & section 영역 배경색 흰색으로 지정
+- [x] 사진 요소 크기 조절하기
+- [x] profile요소 전체 화면의 정중앙 배치
+- [x] profile 클래스 안의 요소 모두 중앙 정렬 -> text-align / flex 사용 OK
+- [x] dl 요소 (profile-detail) 가로 정렬 -> flex 사용
+- [x] 요소와 요소 사이 간격 화면처럼 수정하기 (margin)
+- [x] 사진 동그랗게 만들기
+ */
+
+body {
+  background-color: #bec0c3;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile {
+  background-color: #fff;
+  width: 380px;
+  border-radius: 30px;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-image {
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.profile-name {
+  margin-bottom: 4px;
+}
+
+.profile-location {
+  margin-bottom: 32px;
+}
+
+.profile-detail {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-detail-item {
+  /* 동일한 동작을 하는 두 코드 */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  text-align: center;
+}
+
+.profile-detail dt {
+  margin-bottom: 4px;
+}
