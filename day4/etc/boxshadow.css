@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.btn {
+    margin: 20px;
+    width: 200px;
+    height: 74px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Sofia Sans', sans-serif;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.cancel {
+    background-color: #F57D7D;
+}
+
+.cancel:hover {
+    box-shadow: 0 10px 16px 0 #f57d7d95;
+}
+
+.confirm {
+    background-color: #65BF74;
+}
+
+.confirm:hover {
+    box-shadow: 0 10px 16px 0 #65bf7490;
+}
