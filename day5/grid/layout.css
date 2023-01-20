@@ -3,10 +3,24 @@
     margin: 0;
 }
 
+:root {
+    /* 1fr size */
+    --min-fr-size: 100px;
+    /* font-size */
+    --large-font-size: 30px;
+    --medium-font-size: 20px;
+    /* color */
+    --light-yellow-color: #ffffdf;
+    --yellow-color: #ffd6a4;
+    --dark-yellow-color: #eac285;
+    --green-color: #ade499;
+    --dark-green-color: #6fbf52;
+}
+
 a {
     text-decoration: none;
     font-weight: bold;
-    font-size: 30px;
+    font-size: var(--large-font-size);
     color: black;
 }
 
@@ -19,7 +33,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, minmax(100px, auto));
+    grid-template-rows: repeat(3, minmax(var(--min-fr-size), auto));
 }
 
 nav {
@@ -31,7 +45,7 @@ nav {
     grid-column: 1/2;
     grid-row: 2/3;
     display: grid;
-    grid-template-columns: repeat(6, minmax(100px, auto));
+    grid-template-columns: repeat(6, minmax(var(--min-fr-size), auto));
     grid-template-rows: 1fr;
 }
 
@@ -39,24 +53,24 @@ nav {
     grid-column: 1/6;
     grid-row: 1/2;
     display: grid;
-    grid-template-columns: repeat(4, minmax(100px, auto));
-    grid-template-rows: repeat(5, minmax(100px, auto));
+    grid-template-columns: repeat(4, minmax(var(--min-fr-size), auto));
+    grid-template-rows: repeat(5, minmax(var(--min-fr-size), auto));
 }
 
 .c {
-    background-color: rgb(255, 255, 223);
+    background-color: var(--light-yellow-color);
     grid-row: 1/2;
     grid-column: 1/5;
 }
 
 .d {
-    background-color: rgb(255, 214, 164);
+    background-color: var(--yellow-color);
     grid-row: 2/6;
     grid-column: 1/4;
 }
 
 .e {
-    background-color: rgb(234, 194, 133);
+    background-color: var(--dark-yellow-color);
     grid-row: 2/6;
     grid-column: 4/5;
 }
@@ -65,24 +79,24 @@ nav {
     grid-column: 6/7;
     grid-row: 1/2;
     display: grid;
-    grid-template-rows: repeat(2, minmax(100px, auto));
+    grid-template-rows: repeat(2, minmax(var(--min-fr-size), auto));
     grid-template-columns: 1fr;
 }
 
 .a {
-    background-color: rgb(173, 228, 153);
+    background-color: var(--green-color);
     grid-row: 1/2;
     grid-column: 1/2;
 }
 
 .b {
-    background-color: rgb(138, 225, 107);
+    background-color: var(--dark-green-color);
     grid-row: 2/3;
     grid-column: 1/2;
 }
 
 footer {
-    font-size: 20px;
+    font-size: var(--medium-font-size);
     font-weight: bold;
     text-align: center;
     grid-column: 1/2;
@@ -92,7 +106,7 @@ footer {
 @media screen and (max-width:769px) {
     .content {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, minmax(100px, auto));
+        grid-template-rows: repeat(2, minmax(var(--min-fr-size), auto));
     }
 
     .content-main {
@@ -104,7 +118,7 @@ footer {
         grid-column: 1/2;
         grid-row: 1/2;
         grid-template-rows: 1fr;
-        grid-template-columns: repeat(2, minmax(100px, auto));
+        grid-template-columns: repeat(2, minmax(var(--min-fr-size), auto));
     }
 
     .a {
