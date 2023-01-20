@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+a {
+  font-size: 18px;
+  line-height: 20px;
+  color: #8492a6;
+  text-decoration: none;
+}
+
+/* ▼ 여기부터 코드 진행하기 */
+
+/* 
+[x] 1. ul 태그가 생성한 불렛(동그라미) 제거 
+[x] 2. flex 방식 사용하여 가로 정렬
+[x] 3. li 아이템 별 내부에 여백 주기 -> padding
+[x] 4. li 아이템 사이에 간격 주기 -> margin
+[x] 5. Emails 라는 요소의 경우 선택되었음을 표시할 수 있어야 함 -> class : active
+*/
+
+body {
+  background-color: #d0dbea;
+}
+
+ul {
+  background-color: #ffffff;
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+}
+
+
+ul li {
+  margin-right: 16px;
+}
+
+a {
+  display: block;
+  padding: 16px 20px;
+}
+
+.active {
+  border-bottom: 3px solid rgb(123, 123, 223);
+}
+
+.active a {
+  font-weight: bold;
+  color: rgb(123, 123, 223);
+}
+
+@media screen and (max-width:769px) {
+  ul {
+    flex-direction: column;
+  }
+
+}
